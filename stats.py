@@ -6,10 +6,10 @@ def letter_count(book_text):
     lower_book = book_text.lower()
     letter_count = {}
     for letter in lower_book:
-        key = letter
         if letter in letter_count:
             letter_count[letter] += 1
-        else: letter_count[letter] = 1
+        else: 
+            letter_count[letter] = 1
     return letter_count
 
 def sort_on(d):
